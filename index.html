@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/A Survey Form</title>
+</head>
+<body>
+    <h1 style="text-align:center">A/A Survey Form</h1>
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+
+            <div>
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="first_name" placeholder="First Name" required>
+            </div>
+
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last_name" placeholder="Last Name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email_address" placeholder="someone@email.com" required>
+            </div>
+
+            <div>
+                <label for="status">Status</label>
+                <select id="status" name="user_status_name">
+                  <option value="admin">Student</option>
+                  <option value="user">Teacher</option>
+                  <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Choose your favorite programming language:</p>
+                <input type="radio" id="html" name="preferred_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="preferred_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="preferred_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="comments">Comments</label>
+                <br>
+                <textarea id="comments" name="comments" placeholder="My experience has been..."></textarea>
+            </div>
+            <br>
+
+            <div>
+                <label for="currentDate">Current Date</label><br>
+                <input type="date" id="currentDate" name="current_date">
+            </div>
+            <br>
+
+            <div>
+                <input type="checkbox" id="newsletterSignUp" name="newsletter_signup" value="newsletterSignUp" checked>
+                <label for="newsletterSignUp"> Sign up for newsletter.</label><br>
+                <input type="checkbox" id="agreeTermsConditions" name="agree_terms_conditions" value="agreeTermsConditions">
+                <label for="agreeTermsConditions"> Agree to Terms and Conditions.</label>
+            </div>
+            <br>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
