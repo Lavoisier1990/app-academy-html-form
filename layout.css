@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./images/pexels-fauxels-3183188.jpg");
+    background-size: 100vw;
+    color: rgb(245 246 247);
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    align-items: center;
+}
+
+header {
+    padding: 0px, 10px;
+    margin: 30px;
+}
+
+h1 {
+font-size: 32px;
+}
+
+h1, p#description {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+p#description {
+    font-style: italic;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 8px auto;
+    line-height: 1.5;
+}
+
+form {
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: solid 1px rgb(245 246 247);
+    background-color: #261f54;
+    padding: 20px;
+}
