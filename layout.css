@@ -10,6 +10,10 @@ body {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./images/pexels-fauxels-3183188.jpg");
     background-size: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: rgb(245 246 247);
     font-family: Lato, Helvetica, Arial, sans-serif;
     align-items: center;
