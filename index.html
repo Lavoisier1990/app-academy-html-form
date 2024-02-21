@@ -16,55 +16,96 @@
         <fieldset>
             <legend>Add user</legend>
 
-            <div>
+            <div class="form-group">
                 <label for="firstName">First name</label>
                 <input type="text" id="firstName" name="first_name" placeholder="First Name" required>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="lastName">Last name</label>
                 <input type="text" id="lastName" name="last_name" placeholder="Last Name" required>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email_address" placeholder="someone@email.com" required>
             </div>
 
-            <div>
+            <div class="form-group">
+                <label for="number-label" id="number-label">Age (optional) <input id="number" name="number" type="number" min="16" max="120" placeholder="Enter your age (optional)">
+                </label>
+              </div>
+
+            <div class="form-group">
                 <label for="status">Status</label>
-                <select id="status" name="user_status_name">
+                <select class="dropdown" id="status" name="user_status_name">
+                    <option value="" disabled selected>Select current status</option>
                   <option value="admin">Student</option>
                   <option value="user">Teacher</option>
                   <option value="guest">Guest</option>
                 </select>
             </div>
+        </fieldset>
 
-            <div>
+        <fieldset>
+            <legend>User preferences</legend>
+            <div class="form-group">
                 <p>Choose your favorite programming language:</p>
                 <input type="radio" id="html" name="preferred_language" value="HTML">
                 <label for="html">HTML</label><br>
                 <input type="radio" id="css" name="preferred_language" value="CSS">
                 <label for="css">CSS</label><br>
                 <input type="radio" id="javascript" name="preferred_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
+                <label for="javascript">JavaScript</label><br>
+                <input type="radio" id="python" name="preferred_language" value="Python">
+                <label for="python">Python</label>
             </div>
             <br>
 
-            <div>
+            <div class="form-group">
+                <label for="favorite-feature">What is your favorite feature of the App Academy Open?
+                  <select class="dropdown" name="favorite-feature">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="1">Challenges</option>
+                    <option value="2">Projects</option>
+                    <option value="3">Community</option>
+                    <option value="4">Open Source</option>
+                    <option value="5">User Interface</option>
+                    <option value="6">Social Media Engagement</option>
+                    <option value="7">Other</option>
+                  </select>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p id="improvement-question">What would you like to see improved? <span id="instruction">(Check all that apply)</span></p>
+                <label for="front-end-projects"> <input id="front-end-projects" type="checkbox" name="site-aspects" value="front-end-projects" checked> Front-end Projects </label>
+                <label for="back-end-projects"> <input id="back-end-projects" type="checkbox" name="site-aspects" value="back-end-projects"> Back-end Projects </label>
+                <label for="data-visualization"> <input id="data-visualization" type="checkbox" name="site-aspects" value="data-visualization"> Data Visualization </label>
+                <label for="challenges"> <input id="challenges" type="checkbox" name="site-aspects" value="challenges"> Challenges </label>
+                <label for="open-source-community"> <input id="open-source-community" type="checkbox" name="site-aspects" value="open-source-community"> Open Source Community </label>
+                <label for="gitter-help-rooms"> <input id="gitter-help-rooms" type="checkbox" name="site-aspects" value="gitter-help-rooms"> Gitter Help Rooms </label>
+                <label for="videos"> <input id="videos" type="checkbox" name="site-aspects" value="videos"> Videos </label>
+                <label for="city-meetups"> <input id="city-meetups" type="checkbox" name="site-aspects" value="city-meetups"> City Meetups </label>
+                <label for="wiki"> <input id="wiki" type="checkbox" name="site-aspects" value="wiki"> Wiki </label>
+                <label for="forum"> <input id="forum" type="checkbox" name="site-aspects" value="forum"> Forum </label>
+                <label for="additional-courses"> <input id="additional-courses" type="checkbox" name="site-aspects" value="additional-courses"> Additional Courses </label>
+              </div>
+
+            <div class="form-group">
                 <label for="comments">Comments</label>
                 <br>
                 <textarea id="comments" name="comments" placeholder="My experience has been..."></textarea>
             </div>
             <br>
 
-            <div>
+            <div class="form-group">
                 <label for="currentDate">Current Date</label><br>
                 <input type="date" id="currentDate" name="current_date">
             </div>
             <br>
 
-            <div>
+            <div class="form-group">
                 <input type="checkbox" id="newsletterSignUp" name="newsletter_signup" value="newsletterSignUp" checked>
                 <label for="newsletterSignUp"> Sign up for newsletter.</label><br>
                 <input type="checkbox" id="agreeTermsConditions" name="agree_terms_conditions" value="agreeTermsConditions">
@@ -72,7 +113,7 @@
             </div>
             <br>
 
-            <div>
+            <div class="form-group">
                 <button type="submit">Submit</button>
             </div>
 
