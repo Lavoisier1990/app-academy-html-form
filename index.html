@@ -63,8 +63,8 @@
             <br>
 
             <div class="form-group">
-                <label for="favorite-feature">What is your favorite feature of the App Academy Open?
-                  <select class="dropdown" name="favorite-feature">
+                <label for="favorite-feature">What is your favorite feature of the App Academy Open?</label>
+                  <select class="dropdown" id="favorite-feature" name="favorite-feature">
                     <option value="" disabled selected>Select an option</option>
                     <option value="1">Challenges</option>
                     <option value="2">Projects</option>
@@ -74,7 +74,6 @@
                     <option value="6">Social Media Engagement</option>
                     <option value="7">Other</option>
                   </select>
-                </label>
             </div>
             <br>
 
@@ -94,10 +93,8 @@
 
             <div class="form-group">
                 <label for="comments">Comments</label>
-                <br>
-                <textarea id="comments" name="comments" placeholder="My experience has been..."></textarea>
+                <textarea id="comments" name="comments" rows="5" cols="30" placeholder="My experience has been..."></textarea>
             </div>
-            <br>
 
             <div class="form-group">
                 <label for="currentDate">Current Date</label><br>
@@ -105,16 +102,14 @@
             </div>
             <br>
 
-            <div class="form-group">
-                <input type="checkbox" id="newsletterSignUp" name="newsletter_signup" value="newsletterSignUp" checked>
-                <label for="newsletterSignUp"> Sign up for newsletter.</label><br>
-                <input type="checkbox" id="agreeTermsConditions" name="agree_terms_conditions" value="agreeTermsConditions">
-                <label for="agreeTermsConditions"> Agree to Terms and Conditions.</label>
+            <div class="form-group" id="call-to-action">
+                <label for="newsletterSignUp"><input type="checkbox" id="newsletterSignUp" name="newsletter_signup" value="newsletterSignUp" checked> Sign up to our newsletter.</label><br>
+                <label for="agreeTermsConditions"><input type="checkbox" id="agreeTermsConditions" name="agree_terms_conditions" value="agreeTermsConditions"> Agree to Terms and Conditions.</label>
             </div>
             <br>
 
             <div class="form-group">
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit" class="button-submit">Submit</button>
             </div>
 
         </fieldset>
