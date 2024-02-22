@@ -89,6 +89,7 @@ label {
   span#instruction {
     font-size: 12px;
     display: inline;
+    font-style: italic;
   }
 
  select#favorite-feature {
@@ -96,11 +97,19 @@ label {
     }
 
 textarea#comments {
-    min-height: 120px;
+    min-height: 150px;
     width: 100%;
     padding: 10px;
     font-size: 16px;
 }
+
+input.checkbox {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 1px;
+}
+
 button#submit {
     display: block;
     width: 100%;
@@ -121,4 +130,15 @@ button#submit:hover {
 
 button#submit:active {
     letter-spacing: 2.5px;
+}
+
+div#current-date {
+width: 50%;
+text-align: center;
+margin: 0 auto 8px;
+padding-bottom: 20px;
+}
+
+input#currentDate {
+ font-size: 16px;
 }
